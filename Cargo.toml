@@ -1,0 +1,15 @@
+[package]
+name = "zip-pack"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.95"
+async-recursion = "1.1.1"
+async_zip = { version = "0.0.17", features = ["full"] }
+clap = { version = "4.5.29", features = ["derive"] }
+indicatif = "0.17.11"
+
+# TODO: use crates dep when change is upstreamed
+pack_it_up = {git = "https://github.com/danya02/stevenliebregt__pack_it_up", branch="add_next_k_fit"}
+tokio = { version = "1.43.0", features = ["full"] }
